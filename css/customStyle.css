@@ -1,0 +1,418 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('./fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url('../images/hamburger.png') !important;
+}
+.text_decoration_none {
+  text-decoration: none !important;
+}
+.list_style_type_none {
+  list-style-type: none !important;
+}
+.margin_top_150px {
+  margin-top: 150px !important;
+}
+.text_green {
+  color: #00c881 !important;
+}
+.font_size_35px {
+  font-size: 35px !important;
+}
+/* Home styles start */
+.bg_image {
+  background-image: url('../images/landingImage.png') !important;
+  position: relative;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 200px 0 200px;
+  background-attachment: fixed;
+}
+.overlay::before {
+  position: absolute;
+  content: '';
+  background-color: #212529 !important;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 100%;
+}
+.bg_haeder {
+  background: #212529 !important;
+}
+.nav-item a {
+  color: #fff !important;
+  letter-spacing: 2px;
+}
+.nav-link:hover {
+  color: #00c881 !important;
+}
+.active {
+  color: #00c881 !important;
+}
+.landing_text {
+  letter-spacing: 0.2rem !important;
+  font-size: 2.5rem !important;
+}
+/* Home styles end */
+/* footer styes start */
+.bg_footer {
+  background: #2e3041;
+}
+.bg_green {
+  background: #00c881;
+}
+/* footer styes end */
+/* contact styles start*/
+.font_size_45px {
+  font-size: 45px;
+}
+.form_control {
+  border: 1px solid #2e3041 !important;
+  border-radius: 0px !important;
+}
+/* contact styles end */
+
+.checkbox input[type='checkbox'] {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+  margin-left: -20px;
+}
+.checkbox label {
+  position: relative;
+}
+.checkbox label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 2px solid #00c881;
+}
+.checkbox label:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid #00c881;
+  border-left: 2px solid #00c881;
+  -webkit-transform: rotate(-45deg) scale(0);
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.checkbox input[type='checkbox']:checked ~ label::before {
+  color: #00c881;
+}
+
+.checkbox input[type='checkbox']:checked ~ label::after {
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+  min-height: 34px;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: sub;
+}
+.checkbox label span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.checkbox input[type='checkbox']:focus + label::before {
+  outline: 0;
+}
+.btn_submit {
+  background: #00c881 !important;
+  color: #fff !important;
+}
+.btn_submit:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.contact_card {
+  box-shadow: 3px 0 13px -3px #00c8818c !important;
+  border-radius: 10px !important;
+  border: none !important;
+}
+/* About US start */
+.arrow li::marker {
+  content: '>';
+  color: #00c8818c;
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* About us end */
+/* Mobile styles */
+@media (min-width: 320px) and (max-width: 1024px) {
+  .landing_text {
+    letter-spacing: 0.2rem !important;
+    font-size: 1.5rem !important;
+  }
+  .margin_top_150px {
+    margin-top: 100px !important;
+  }
+  .font_size_35px {
+    font-size: 15px !important;
+  }
+}
+/* Mobile styles */
+.services_card:hover {
+  box-shadow: 0px 10px 30px 0px #00c88133 !important;
+}
+.services_card {
+  border: 1px solid #f2f2f2 !important;
+  border-radius: 10px !important;
+  -webkit-transition: all 0.4s ease-out 0s !important;
+  -moz-transition: all 0.4s ease-out 0s !important;
+  -ms-transition: all 0.4s ease-out 0s !important;
+  -o-transition: all 0.4s ease-out 0s !important;
+  transition: all 0.4s ease-out 0s !important;
+}
+#module {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module #collapseExample.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module #collapseExample.collapsing {
+  height: 175px;
+}
+
+#module a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module1 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module1 #collapseExample1.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module1 #collapseExample1.collapsing {
+  height: 175px;
+}
+
+#module1 a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module1 a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+#module2 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module2 #collapseExample2.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module2 #collapseExample2.collapsing {
+  height: 175px;
+}
+
+#module2 a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module2 a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module3 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module3 #collapseExample3.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module3 #collapseExample3.collapsing {
+  height: 175px;
+}
+
+#module3 a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module3 a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module4 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module4 #collapseExample4.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module4 #collapseExample4.collapsing {
+  height: 175px;
+}
+
+#module4 a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module4 a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+#module5 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module5 #collapseExample4.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module5 #collapseExample4.collapsing {
+  height: 175px;
+}
+
+#module5 a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module5 a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+#module6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module6 #collapseExample6.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module6 #collapseExample6.collapsing {
+  height: 175px;
+}
+
+#module6 a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module6 a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+#module7 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#module7 #collapseExample7.collapse:not(.show) {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+#module7 #collapseExample7.collapsing {
+  height: 175px;
+}
+
+#module7 a.collapsed::after {
+  content: 'Read More';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+
+#module7 a:not(.collapsed)::after {
+  content: 'Read Less';
+  color: #00c881 !important;
+  text-decoration: none !important;
+}
+.nav-link.active {  color: #00c881 !important;}
